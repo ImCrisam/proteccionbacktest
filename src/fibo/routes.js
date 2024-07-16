@@ -4,8 +4,8 @@ const controller = require('./controller/index');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  controller.getStatus(res);
+router.post('/', (req, res) => {
+  controller.fibo(req, res);
 });
 
 module.exports = router;
